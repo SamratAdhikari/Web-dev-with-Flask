@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.process-container {
+  display: flex;
+  text-align: center;
+  margin-top: 25vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  padding: 10vh;
+  border: 1px solid rgb(146, 144, 144);
+  border-radius: 25px;
+  box-shadow: 5px 10px 10px #888888;
+
+  height: auto;
+  flex-direction: row;
+}
+
+.process-thumbnail {
+  width: 40%;
+  height: 100%;
+  box-shadow: 5px 10px 10px #888888;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.process-box {
+  height: 100%;
+  width: 50%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+.process-title {
+  width: 100%;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.process-size {
+  color: #888888;
+  font-size: 2vh;
+  font-weight: bold;
+  padding-bottom: 2vh;
+}
+
+.download-button {
+  background-color: #dc3545;
+  border-radius: 9px;
+  height: 7vh;
+  font-size: 3vh;
+  font-weight: bold;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 5px 10px 10px #888888;
+  color: rgb(241, 238, 232);
+}
+
+.download-button:hover {
+  background-color: rgb(122, 14, 36);
+  cursor: pointer;
+}

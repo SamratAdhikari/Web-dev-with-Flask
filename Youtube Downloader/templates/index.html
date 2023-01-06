@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+
+  {% block title %}Home{% endblock %} 
+
+  {% block body %}
+
+<div class="container">
+  <div class="title">YouTube Downloader</div>
+  <div class="subtitle">Downloading YouTube videos and audios made easy!</div>
+  <div class="submit">
+    <form action="/process" method="post">
+      <input
+        class="input"
+        type="text"
+        name="user_url"
+        placeholder="search and paste YouTube link here"
+      />
+      <button class="button" type="submit" value="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+  {% endblock %}

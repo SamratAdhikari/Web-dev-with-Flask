@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background: url("../images/background.jpg");
+
+  /* background-size; */
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  margin-top: 25vh;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  padding: 10vh;
+  border: 1px solid rgb(146, 144, 144);
+  border-radius: 25px;
+  box-shadow: 5px 10px 10px #888888;
+  flex-flow: column wrap;
+}
+
+.title {
+  color: #000000;
+  text-shadow: 1px 0 #000000;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+  font-size: 4vh;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+.subtitle {
+  color: black;
+  font-size: 3vh;
+  /* font-weight: bold;  */
+  padding-bottom: 3vh;
+  text-align: center;
+}
+
+.submit {
+  padding-bottom: 1vh;
+}
+
+.input {
+  border: 2px solid rgb(216, 139, 152);
+  border-radius: 13px;
+  text-align: center;
+  width: 60%;
+  font-size: 2vh;
+  height: 5vh;
+}
+
+.button {
+  background-color: #dc3545;
+  border-radius: 9px;
+  color: aliceblue;
+  font-size: 17px;
+  font-weight: bold;
+  height: 5vh;
+  width: 20%;
+}
+
+.button:hover {
+  background-color: rgb(122, 14, 36);
+  cursor: pointer;
+}
+
+.input:hover {
+  border: 2px solid rgb(122, 14, 36);
+}

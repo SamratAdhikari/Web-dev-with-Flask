@@ -1,0 +1,30 @@
+{% extends 'base.html' %} {% block title %}Download{% endblock %} {% block body
+%}
+
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for msg in messages %}
+      <p>{{ msg }}</p>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<div class="process-container">
+  <div class="process-thumbnail">
+    <img class="image" src="{{ thumbnail }}" alt="" />
+  </div>
+
+  <div class="process-box">
+    <div class="process-title">{{ title }}</div>
+    <div class="process-size">{{ size }}MB</div>
+
+    <div class="process-download">
+      <form action="/download" method="post">
+        <button class="download-button" name="download-button" type="submit">
+          Download
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
